@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       					http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- <bean id="c1" class="kr.hs.study.beans.Car">
+		<constructor-arg value="3000" index="0"/>
+		<constructor-arg value="sonata" index="1"/>
+	</bean>
+	<bean id="t1" class="kr.hs.study.beans.CarUser" lazy-init="true">
+		<constructor-arg value="kim" index="0"/>
+		<constructor-arg value="red" index="1"/>
+		<constructor-arg ref="c1" index="2"/>  xml를 이용한 값 넣기
+	</bean>
+	
+	setter DI
+	<bean id="c2" class="kr.hs.study.beans.Car">
+		<constructor-arg value="5000" index="0"/>
+		<constructor-arg value="k9" index="1"/>
+	</bean>
+	
+	<bean id="t2" class="kr.hs.study.beans.CarUser" lazy-init="true">
+		<property name="owner" value="lee"></property>
+		<property name="color" value="blue"></property>
+		<property name="car_type" ref="c2"></property>
+	</bean> -->
+	
+	<!-- 자동주입, park, green, 7000, avante -->
+	 <bean id="c1" class="kr.hs.study.beans.Car">
+		<constructor-arg value="7000" index="0"/>
+		<constructor-arg value="avante" index="1"/>
+	</bean>
+	
+	<bean id="t3" class="kr.hs.study.beans.CarUser" lazy-init="true" autowire = "byType">
+		<constructor-arg value="park" index="0"/>
+		<constructor-arg value="green" index="1"/>
+		<constructor-arg ref="c1"/>
+	</bean>
+</beans>
+
+
