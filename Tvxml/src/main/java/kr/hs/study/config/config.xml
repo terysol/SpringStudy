@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       					http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="tv" class="kr.hs.study.beans.SamsungTv">
+		<constructor-arg value="1000" index="0"/>
+		<constructor-arg ref="s1" index="1"/>
+	</bean>
+	<bean id="s1" class="kr.hs.study.beans.SonySpeaker"/>
+	
+	
+	<bean id="tv2" class="kr.hs.study.beans.LgTv">
+		<property name="price" value="1000"/>
+		<property name="speaker" ref="s2"/>
+	</bean>
+	<bean id="s2" class="kr.hs.study.beans.AppleSpeaker"/>
+	
+	
+	
+</beans>
+
+
