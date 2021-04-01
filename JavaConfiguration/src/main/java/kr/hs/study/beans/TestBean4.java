@@ -6,7 +6,8 @@ public class TestBean4 {
 	
 	private int data1;
 	
-	// ▽ 객체를 자동 주입한다. DataBean4타입(클래스)으로 등록된 Bean을 data4에 주입해라. -> DataBean4의 객체가 생성되어야 한다. (자동으로 setData4()메서드 호출
+	// ▽ 객체를 자동 주입한다. DataBean4타입(클래스)으로 등록된 Bean을 data4에 주입해라. 
+	// -> DataBean4의 객체가 생성되어야 한다. (자동으로 setData4()메서드 호출
 	@Autowired
 	private DataBean4 data2;
 	

@@ -44,7 +44,7 @@ public class MainClass {
 		System.out.println("=========================");
 		
 		TestBean2 obj9=ctx.getBean("t9",TestBean2.class);
-		obj9.getData1().prData();
+		obj9.prData();
 		
 		ctx.close();
 	}
