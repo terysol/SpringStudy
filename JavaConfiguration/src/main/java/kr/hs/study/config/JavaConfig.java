@@ -57,6 +57,7 @@ public class JavaConfig {
 		
 		return t4;
 	}
+	
 	@Bean
 	public DataBean4 obj8() {
 		DataBean4 d4=new DataBean4();

@@ -7,10 +7,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import kr.hs.study.dao.MapperClass;
 import kr.hs.study.dto.LoginDTO;
 
 @Configuration
-@ComponentScan(basePackages = {"kr.hs.study"})
+@ComponentScan(basePackages = {"kr.hs.study"})    // annoation사용하겠다. (자바 ver)
 public class JavaConfig {
 	
 	@Bean
@@ -28,4 +29,5 @@ public class JavaConfig {
 		JdbcTemplate db=new JdbcTemplate(source);
 		return db;
 	}
+	
 }

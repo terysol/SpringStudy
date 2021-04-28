@@ -10,8 +10,8 @@
                        http://www.springframework.org/schema/aop
                        http://www.springframework.org/schema/aop/spring-aop.xsd">
         
-     <context:annotation-config/>       <!--  annotation 사용하기 위해 -->           
-  	<context:component-scan base-package="kr.hs.study"/>   <!-- 자바  -->
+     <context:annotation-config/>       <!--  자바로 빈 만들기 위해 -->           
+  	<context:component-scan base-package="kr.hs.study"/>   <!-- annotation 사용하기 위해  -->
 	
 
 </beans>
