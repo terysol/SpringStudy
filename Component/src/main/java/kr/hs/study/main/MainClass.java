@@ -28,11 +28,11 @@ public class MainClass {
 //		TestBean3 t6=ctx1.getBean("obj3",TestBean3.class);
 //		System.out.println("t6 : " + t6);
 		
-		TestBean5 t7=ctx1.getBean(TestBean5.class);
-		System.out.println("t7.getA() : " + t7.getA());
-		System.out.println("t7.getB() : " + t7.getB());
-		System.out.println("t7.getC() : " + t7.getC() );
-		System.out.println("t7.getD() : " + t7.getD());
+//		TestBean5 t7=ctx1.getBean(TestBean5.class);
+//		System.out.println("t7.getA() : " + t7.getA());
+//		System.out.println("t7.getB() : " + t7.getB());
+//		System.out.println("t7.getC() : " + t7.getC() );
+//		System.out.println("t7.getD() : " + t7.getD());
 		
 //		TestBean5 t9=ctx1.getBean("obj1",TestBean5.class);
 //		System.out.println("t9.getA() : " + t9.getA());
@@ -51,11 +51,11 @@ public class MainClass {
 //		TestBean2 t4=ctx2.getBean(TestBean2.class);
 //		System.out.println("t4 : " + t4);
 		
-//		TestBean5 t8=ctx2.getBean("t9", TestBean5.class);
-//		System.out.println("t8.getA() : " + t8.getA());
-//		System.out.println("t8.getB() : " + t8.getB());
-//		System.out.println("t8.getC() : " + t8.getC() );
-//		System.out.println("t8.getD() : " + t8.getD());
+		TestBean5 t8=ctx2.getBean("t9", TestBean5.class);
+		System.out.println("t8.getA() : " + t8.getA());
+		System.out.println("t8.getB() : " + t8.getB());
+		System.out.println("t8.getC() : " + t8.getC() );
+		System.out.println("t8.getD() : " + t8.getD());
 		
 		ctx2.close();
 	}
